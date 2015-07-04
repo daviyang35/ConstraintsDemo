@@ -9,11 +9,14 @@
 #import "MainViewController.h"
 #import "HelloViewController.h"
 #import "SecondViewController.h"
+#import "Demo1ViewController.h"
 
 @interface MainViewController ()
 
 @property (strong,nonatomic)    HelloViewController *helloViewController;
 @property (strong,nonatomic)    SecondViewController *secondViewController;
+@property (strong,nonatomic)    Demo1ViewController *demo1ViewController;
+
 @end
 
 @implementation MainViewController
@@ -25,10 +28,11 @@
     
     _helloViewController = [[HelloViewController alloc] init];
     _secondViewController = [[SecondViewController alloc] init];
+    _demo1ViewController = [[Demo1ViewController alloc] init];
     
-    self.viewControllers = @[_helloViewController,_secondViewController];
+    self.viewControllers = @[_helloViewController,_secondViewController,_demo1ViewController];
 
-    NSArray *titleArray = @[@"Item",@"VFL"];
+    NSArray *titleArray = @[@"Item",@"VFL",@"Demo1"];
     [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *item, NSUInteger idx, BOOL *stop) {
         item.title = titleArray[idx];
     }];

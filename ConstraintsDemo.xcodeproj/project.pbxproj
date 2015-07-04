@@ -15,6 +15,7 @@
 		53A17DEC1B46E8D7008F02F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A17DEB1B46E8D7008F02F3 /* Images.xcassets */; };
 		53A17DEF1B46E8D7008F02F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A17DED1B46E8D7008F02F3 /* LaunchScreen.xib */; };
 		53A17DFB1B46E8D7008F02F3 /* ConstraintsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A17DFA1B46E8D7008F02F3 /* ConstraintsDemoTests.m */; };
+		53D1B09B1B47F26F00B1742B /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		53A17DF41B46E8D7008F02F3 /* ConstraintsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A17DF91B46E8D7008F02F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A17DFA1B46E8D7008F02F3 /* ConstraintsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintsDemoTests.m; sourceTree = "<group>"; };
+		53D1B0991B47F26F00B1742B /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				5375DBC81B47870D0012BABB /* HelloViewController.m */,
 				5375DBCA1B478E750012BABB /* SecondViewController.h */,
 				5375DBCB1B478E750012BABB /* SecondViewController.m */,
+				53D1B0991B47F26F00B1742B /* Demo1ViewController.h */,
+				53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */,
 			);
 			name = Page;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5375DBCC1B478E750012BABB /* SecondViewController.m in Sources */,
+				53D1B09B1B47F26F00B1742B /* Demo1ViewController.m in Sources */,
 				53A17DEA1B46E8D7008F02F3 /* AppDelegate.m in Sources */,
 				5375DBC61B4785810012BABB /* MainViewController.m in Sources */,
 				53A17DE71B46E8D7008F02F3 /* main.m in Sources */,

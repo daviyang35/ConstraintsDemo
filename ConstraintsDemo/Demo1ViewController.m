@@ -98,6 +98,9 @@
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];
+    
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
 }
 
 @end

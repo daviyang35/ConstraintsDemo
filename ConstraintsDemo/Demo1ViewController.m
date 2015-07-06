@@ -59,24 +59,23 @@
     [_blueView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [_grayView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(_redView,_blueView,_grayView,self.view);
+    NSDictionary *views = NSDictionaryOfVariableBindings(_redView,_blueView,_grayView);
     
     // 目标：
-    // _redVeiew 与 _blueView 宽度高度一致，左右间隔一个单位
-    // _grayView 高度占可视区域50%,左右留一个单位间隙
+    // _redView 与 _blueView 宽度高度一致，左右间隔一个单位
+    // _grayView 与 _redView 高度一致,左上右留一个单位间隙
     
     CGRect tabBarFrame = self.tabBarController.tabBar.frame;
     CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
-    CGRect screen = [self.view frame];
-    
-    NSNumber *screenHeight= [NSNumber numberWithFloat:(screen.size.height - statusBarFrame.size.height - tabBarFrame.size.height)/2];
     
     NSNumber *statusBarHeight = [NSNumber numberWithFloat:statusBarFrame.size.height];
+    NSNumber *tabBarHeight = [NSNumber numberWithFloat:tabBarFrame.size.height];
+    
 
-    NSDictionary *metrics = NSDictionaryOfVariableBindings(screenHeight,statusBarHeight);
+    NSDictionary *metrics = NSDictionaryOfVariableBindings(statusBarHeight,tabBarHeight);
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
-                               @"H:|-[_redView(>=50)]-[_blueView(==_redView)]-|"
+                               @"H:|-[_redView]-[_blueView(==_redView)]-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
@@ -88,7 +87,7 @@
                                                                         views:views]];
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
-                               @"V:|-statusBarHeight-[_redView(==screenHeight)]-[_grayView(==screenHeight)]"
+                               @"V:|-statusBarHeight-[_redView]-[_grayView(==_redView)]-tabBarHeight-|"
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];

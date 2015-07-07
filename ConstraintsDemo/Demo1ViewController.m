@@ -13,6 +13,7 @@
 @property (strong,nonatomic) UIView *redView;
 @property (strong,nonatomic) UIView *blueView;
 @property (strong,nonatomic) UIView *grayView;
+@property (strong,nonatomic) NSMutableArray *constraints;
 
 @end
 
@@ -31,11 +32,13 @@
     _grayView = [[UIView alloc] init];
     _grayView.backgroundColor = [UIColor grayColor];
     
+    _constraints = [NSMutableArray array];
+    
     [self.view addSubview:_redView];
     [self.view addSubview:_blueView];
     [self.view addSubview:_grayView];
     
-    [self setLayout];
+    //[self setLayout];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +55,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)viewWillLayoutSubviews
+{
+    for (NSArray* array in _constraints)
+    {
+        [self.view removeConstraints:array];
+    }
+    [_constraints removeAllObjects];
+    [self setLayout];
+}
 
 - (void)setLayout
 {
@@ -74,30 +87,33 @@
 
     NSDictionary *metrics = NSDictionaryOfVariableBindings(statusBarHeight,tabBarHeight);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+    [_constraints addObject:[NSLayoutConstraint constraintsWithVisualFormat:
                                @"H:|-[_redView]-[_blueView(==_redView)]-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+    [_constraints addObject:[NSLayoutConstraint constraintsWithVisualFormat:
                                @"H:|-[_grayView]-|"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+    [_constraints addObject:[NSLayoutConstraint constraintsWithVisualFormat:
                                @"V:|-statusBarHeight-[_redView]-[_grayView(==_redView)]-tabBarHeight-|"
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+    [_constraints addObject:[NSLayoutConstraint constraintsWithVisualFormat:
                                @"V:|-statusBarHeight-[_blueView(==_redView)]"
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];
-    
+    for (NSArray * array in _constraints)
+    {
+        [self.view addConstraints:array];
+    }
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
 }

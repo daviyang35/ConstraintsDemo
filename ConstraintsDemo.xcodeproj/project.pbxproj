@@ -11,12 +11,15 @@
 		5375DBC61B4785810012BABB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5375DBC51B4785810012BABB /* MainViewController.m */; };
 		5375DBC91B47870D0012BABB /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5375DBC81B47870D0012BABB /* HelloViewController.m */; };
 		5375DBCC1B478E750012BABB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5375DBCB1B478E750012BABB /* SecondViewController.m */; };
+		5386DDFC1B5015FC00545CD2 /* DynamicAnimatorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386DDFB1B5015FC00545CD2 /* DynamicAnimatorTableViewController.m */; };
 		53A17DE71B46E8D7008F02F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A17DE61B46E8D7008F02F3 /* main.m */; };
 		53A17DEA1B46E8D7008F02F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A17DE91B46E8D7008F02F3 /* AppDelegate.m */; };
 		53A17DEC1B46E8D7008F02F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A17DEB1B46E8D7008F02F3 /* Images.xcassets */; };
 		53A17DEF1B46E8D7008F02F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A17DED1B46E8D7008F02F3 /* LaunchScreen.xib */; };
 		53A17DFB1B46E8D7008F02F3 /* ConstraintsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A17DFA1B46E8D7008F02F3 /* ConstraintsDemoTests.m */; };
+		53CB47B41B52081600946FD5 /* DynamicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB47B31B52081600946FD5 /* DynamicDemoViewController.m */; };
 		53D1B09B1B47F26F00B1742B /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */; };
+		53F1164C1B4FAF2600C8F987 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F1164B1B4FAF2600C8F987 /* DynamicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 		5375DBC81B47870D0012BABB /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
 		5375DBCA1B478E750012BABB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5375DBCB1B478E750012BABB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5386DDFA1B5015FC00545CD2 /* DynamicAnimatorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicAnimatorTableViewController.h; sourceTree = "<group>"; };
+		5386DDFB1B5015FC00545CD2 /* DynamicAnimatorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicAnimatorTableViewController.m; sourceTree = "<group>"; };
 		53A17DE11B46E8D7008F02F3 /* ConstraintsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A17DE51B46E8D7008F02F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A17DE61B46E8D7008F02F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,8 +52,13 @@
 		53A17DF41B46E8D7008F02F3 /* ConstraintsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A17DF91B46E8D7008F02F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A17DFA1B46E8D7008F02F3 /* ConstraintsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintsDemoTests.m; sourceTree = "<group>"; };
+		53CB47B11B52073F00946FD5 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		53CB47B21B52081600946FD5 /* DynamicDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDemoViewController.h; sourceTree = "<group>"; };
+		53CB47B31B52081600946FD5 /* DynamicDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicDemoViewController.m; sourceTree = "<group>"; };
 		53D1B0991B47F26F00B1742B /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
 		53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		53F1164A1B4FAF2600C8F987 /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		53F1164B1B4FAF2600C8F987 /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
 		B25B8D37D12CA76E61CEAC6E /* Pods-ConstraintsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintsDemo/Pods-ConstraintsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F7B1882D72D1BD9D70EFCAB5 /* Pods-ConstraintsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintsDemo/Pods-ConstraintsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +101,12 @@
 				5375DBCB1B478E750012BABB /* SecondViewController.m */,
 				53D1B0991B47F26F00B1742B /* Demo1ViewController.h */,
 				53D1B09A1B47F26F00B1742B /* Demo1ViewController.m */,
+				53F1164A1B4FAF2600C8F987 /* DynamicViewController.h */,
+				53F1164B1B4FAF2600C8F987 /* DynamicViewController.m */,
+				5386DDFA1B5015FC00545CD2 /* DynamicAnimatorTableViewController.h */,
+				5386DDFB1B5015FC00545CD2 /* DynamicAnimatorTableViewController.m */,
+				53CB47B21B52081600946FD5 /* DynamicDemoViewController.h */,
+				53CB47B31B52081600946FD5 /* DynamicDemoViewController.m */,
 			);
 			name = Page;
 			sourceTree = "<group>";
@@ -124,6 +140,7 @@
 				53A17DEB1B46E8D7008F02F3 /* Images.xcassets */,
 				53A17DED1B46E8D7008F02F3 /* LaunchScreen.xib */,
 				53A17DE41B46E8D7008F02F3 /* Supporting Files */,
+				53CB47B11B52073F00946FD5 /* Constant.h */,
 			);
 			path = ConstraintsDemo;
 			sourceTree = "<group>";
@@ -309,8 +326,11 @@
 				53D1B09B1B47F26F00B1742B /* Demo1ViewController.m in Sources */,
 				53A17DEA1B46E8D7008F02F3 /* AppDelegate.m in Sources */,
 				5375DBC61B4785810012BABB /* MainViewController.m in Sources */,
+				53CB47B41B52081600946FD5 /* DynamicDemoViewController.m in Sources */,
 				53A17DE71B46E8D7008F02F3 /* main.m in Sources */,
 				5375DBC91B47870D0012BABB /* HelloViewController.m in Sources */,
+				5386DDFC1B5015FC00545CD2 /* DynamicAnimatorTableViewController.m in Sources */,
+				53F1164C1B4FAF2600C8F987 /* DynamicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
